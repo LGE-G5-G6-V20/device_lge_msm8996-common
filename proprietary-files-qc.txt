@@ -253,6 +253,10 @@ vendor/lib64/vendor.qti.gnss@3.0.so
 vendor/lib/libwifi-hal-ctrl.so|f1760164537acbbc6554d6197d4d3827074cb57e
 vendor/lib64/libwifi-hal-ctrl.so|fb187f553721bd78d18c6dae640c39e7b1370d7f
 
+# GPS - from leeco x2 (prebuilt)
+vendor/lib/libwifi-hal-ctrl.so|f1760164537acbbc6554d6197d4d3827074cb57e
+vendor/lib64/libwifi-hal-ctrl.so|fb187f553721bd78d18c6dae640c39e7b1370d7f
+
 # Graphics
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
