@@ -413,28 +413,3 @@ PRODUCT_PACKAGES += \
 # CryptfsHW
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
-
-# GCam 
-PRODUCT_PACKAGES += \
-    GCam 
-
-#Gcam PrivApp Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/GCam/privapp-permissions-gcam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-gcam.xml \
-
-
-# GalleryGO
-PRODUCT_PACKAGES += \
-    GalleryGo
-    
-# GBoard
-PRODUCT_PACKAGES += \
-    GBoard
-    
-# Duck Duck Go
-PRODUCT_PACKAGES += \
-    DDG
-  
-# Microg Settings
-#WITH_GMS := true
-    
