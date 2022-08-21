@@ -22,11 +22,8 @@ COMMON_PATH := device/lge/msm8996-common
 
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_DUP_RULES := true
-<<<<<<< HEAD
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
-=======
->>>>>>> 0c8ba2d3... FIx permissive position and revert commit: 64367b05f59b5c539a86570623bcf2f4194870f9
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
