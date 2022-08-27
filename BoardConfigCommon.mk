@@ -213,9 +213,5 @@ WIFI_DRIVER_FW_PATH_AP      := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm8996
-
 # inherit from the proprietary version
 include vendor/lge/msm8996-common/BoardConfigVendor.mk
