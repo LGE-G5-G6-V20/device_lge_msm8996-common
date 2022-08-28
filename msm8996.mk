@@ -162,6 +162,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8996 \
     memtrack.msm8996 \
     libdisplayconfig \
+    libqdMetaData \
     libqdMetaData.system
 
 # Doze mode
