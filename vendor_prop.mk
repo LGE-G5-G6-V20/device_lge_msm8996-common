@@ -113,8 +113,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.egl.hw=1 \
     debug.gralloc.gfx_ubwc_disable=0 \
-    ro.hardware.vulkan=adreno
-    ro.hardware.egl=adreno
+    ro.hardware.vulkan=adreno \
+    ro.hardware.egl=adreno \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     sdm.perf_hint_window=50 \
@@ -129,11 +129,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.late.app.duration=20500000 \
     debug.sf.late.sf.duration=10500000 \
     debug.sf.use_phase_offsets_as_durations=1 \
-		vendor.gralloc.enable_fb_ubwc=1 \
-		vendor.gralloc.disable_wb_ubwc=1 \
-		persist.debug.wfd.enable=1 \
-		persist.sys.wfd.nohdcp=1 \
-		debug.sf.enable_hwc_vds=1
+    debug.renderengine.backend=skiaglthreaded
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
