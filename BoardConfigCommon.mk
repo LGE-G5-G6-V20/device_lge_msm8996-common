@@ -69,12 +69,8 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX_ARM32 := $(PWD)/prebuilts/gcc/linux-x86/arm/g
 
 TARGET_KERNEL_NEW_GCC_COMPILE := true
 
-#CAF AUDIO
-USE_DEVICE_SPECIFIC_AUDIO := true
-DEVICE_SPECIFIC_AUDIO_PATH := hardware/qcom-caf/msm8996/audio
-TARGET_USES_AOSP_FOR_AUDIO := true
-
-# Audio -- From sony tone
+# Audio
+>>>>>>> ea51059f... Remove caf audio config
 AUDIO_FEATURE_ENABLED_ACDB_LICENSE := true
 AUDIO_FEATURE_ENABLED_ALAC_OFFLOAD := true
 AUDIO_FEATURE_ENABLED_ANC_HEADSET := true
