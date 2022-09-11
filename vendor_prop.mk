@@ -80,13 +80,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.mode=concurrent \
     persist.data.netmgrd.qos.enable=true
 
-# Display
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qualcomm.cabl=0 \
-    ro.sf.lcd_density=560 \
-    debug.stagefright.ccodec=0 \
-    persist.sys.sf.disable_blurs=1
-
 # Factory Reset Protection (FRP)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/platform/soc/624000.ufshc/by-name/persistent
@@ -108,36 +101,34 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.loc.nlp_name=com.qualcomm.location \
     ro.gps.agps_provider=1
 
-# Graphics
+# Graphics & Display
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.display.cabl=0 \
+    ro.opengles.version=196610 \
+    ro.hardware.vulkan=adreno \
+    ro.hardware.egl=adreno \
+    sdm.debug.disable_rotator_split=1 \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=5 \
+    ro.surface_flinger.supports_background_blur \
+    ro.surface_flinger.enable_layer_caching \
     debug.sf.hw=1 \
     debug.egl.hw=1 \
     debug.gralloc.gfx_ubwc_disable=0 \
-    ro.hardware.vulkan=adreno \
-    ro.hardware.egl=adreno \
+    debug.hwui.use_partial_updates=true \
+    debug.hwui.renderer=skiagl \
+    debug.renderengine.backend=skiaglthreaded \
     dev.pm.dyn_samplingrate=1 \
     persist.demo.hdmirotationlock=false \
     sdm.perf_hint_window=50 \
-    persist.hwc.enable_vds=1 \
-    sdm.debug.disable_rotator_split=1 \
-    ro.surface_flinger.set_idle_timer_ms=9000 \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
-    debug.sf.early.app.duration=16500000 \
-    debug.sf.early.sf.duration=16000000 \
-    debug.sf.earlyGl.app.duration=21000000 \
-    debug.sf.earlyGl.sf.duration=13500000 \
-    debug.sf.late.app.duration=20500000 \
-    debug.sf.late.sf.duration=10500000 \
-    debug.sf.use_phase_offsets_as_durations=1 \
-    debug.renderengine.backend=skiaglthreaded
+    persist.hwc.enable_vds=1 
 
 # HWUI
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hwui.texture_cache_size=96 \
-    ro.hwui.layer_cache_size=64 \
-    ro.hwui.r_buffer_cache_size=12 \
-    ro.hwui.path_cache_size=39 \
-    ro.hwui.gradient_cache_size=1 \
+    ro.hwui.texture_cache_size=128 \
+    ro.hwui.layer_cache_size=128 \
+    ro.hwui.r_buffer_cache_size=24 \
+    ro.hwui.path_cache_size=64 \
+    ro.hwui.gradient_cache_size=2 \
     ro.hwui.drop_shadow_cache_size=7 \
     ro.hwui.texture_cache_flushrate=0.4 \
     ro.hwui.text_small_cache_width=2048 \
@@ -145,6 +136,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_large_cache_width=3072 \
     ro.hwui.text_large_cache_height=2048 \
     ro.hwui.render_ahead=1
+    ro.hwui.use_vulkan=1
 
 #Launcher: Keep launcher in memory
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -160,10 +152,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q660-13149-1
     
-# OpenGLES
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196610
-
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.am.reschedule_service=true \
