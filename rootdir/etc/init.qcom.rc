@@ -370,6 +370,14 @@ on boot
     chown system input /sys/bus/spi/devices/spi8.1/regulator_enable
     chown system input /sys/bus/spi/devices/spi8.1/wakeup_enable
 
+# DAC control
+    chmod 0660 /sys/devices/soc/c175000.i2c/i2c-1/1-0048/headset_type
+    chmod 0660 /sys/devices/soc/c175000.i2c/i2c-1/1-0048/avc_volume
+    chmod 0660 /sys/devices/soc/c175000.i2c/i2c-1/1-0048/ess_filter
+    chown system system /sys/devices/soc/c175000.i2c/i2c-1/1-0048/headset_type
+    chown system system /sys/devices/soc/c175000.i2c/i2c-1/1-0048/avc_volume
+    chown system system /sys/devices/soc/c175000.i2c/i2c-1/1-0048/ess_filter
+
     write /proc/sys/net/core/netdev_max_backlog 5000
     
     # Setup Zram
@@ -899,7 +907,7 @@ on configure-cpuset
     chown system system /dev/cpuset/camera-daemon
     chown system system /dev/cpuset/camera-daemon/tasks
     chmod 0664 /dev/cpuset/camera-daemon/tasks
-    
+
     # Update DVR cpusets to runtime values.
     write /dev/cpuset/kernel/cpus 0,1
     write /dev/cpuset/system/performance/cpus 2
@@ -908,7 +916,7 @@ on configure-cpuset
     write /dev/cpuset/application/performance/cpus 3
     write /dev/cpuset/application/background/cpus 1
     write /dev/cpuset/application/cpus 1,3
-   
+
 on property:sys.boot_completed=1
     # Disable boosting
     write /proc/sys/kernel/sched_boost 0
