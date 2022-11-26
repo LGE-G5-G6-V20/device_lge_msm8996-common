@@ -181,7 +181,9 @@ PRODUCT_PACKAGES += \
     memtrack.msm8996 \
     libdisplayconfig \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9.vendor
 
 # Doze mode
 PRODUCT_PACKAGES += \
