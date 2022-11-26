@@ -148,10 +148,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.video.disable.ubwc=1 \
     vidc.enc.dcvs.extra-buff-count=2
 
-# Netflix
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q660-13149-1
-    
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.am.reschedule_service=true \
