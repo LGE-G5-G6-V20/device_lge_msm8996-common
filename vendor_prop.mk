@@ -141,6 +141,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Launcher: Keep launcher in memory
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.HOME_APP_ADJ = 1
+    
+#iorapd
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.iorapd.enable=false \
+    iorapd.perfetto.enable=false \
+    iorapd.readahead.enable=false
 
 # Media
 PRODUCT_PROPERTY_OVERRIDES += \
