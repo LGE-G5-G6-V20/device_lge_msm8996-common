@@ -180,6 +180,8 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8996 \
     memtrack.msm8996 \
     libdisplayconfig \
+    libdisplayconfig.qti \
+    libdisplayconfig.vendor \
     libqdMetaData \
     libqdMetaData.system \
     vendor.display.config@1.9 \
@@ -454,7 +456,8 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \
-    libnl
+    libnl \
+    libstagefright_enc_common
 
 # CryptfsHW
 PRODUCT_PACKAGES += \
