@@ -151,12 +151,6 @@ PRODUCT_PACKAGES += \
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
-    
-
-#Dac
-PRODUCT_PACKAGES += \
-    QuadDACPanel \
-    vendor.lge.hardware.audio.dac.control@1.0-service
 
 # Device init scripts
 PRODUCT_PACKAGES += \
