@@ -246,7 +246,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.usb.rndis.func.name=rndis_bam
 
 # Usage Data. bye bye google.
-ro.config.nocheckin=1
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.nocheckin=1
 
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
