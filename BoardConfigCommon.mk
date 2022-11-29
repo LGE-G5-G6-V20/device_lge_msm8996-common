@@ -162,6 +162,7 @@ TARGET_NEEDS_PDFIUM_BIGINT := true
 
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
